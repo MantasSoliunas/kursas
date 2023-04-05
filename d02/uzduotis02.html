@@ -12,16 +12,22 @@
         <h1>About</h1>
     <p><b>Lorem Ipsum</b> is simply dummy text of the <em>printing and typesetting industry</em>. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type speciment book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
     <h1>Projects</h1>
-    <ul><div><li>Featured</li></ul></div>
-        <ul style="list-style-type:circle">
+    <ul>
+        <li>Featured</li>
+        <ul>
         <li><a href="project1.html">Project 1</a></li>
         <li><a href="project2.html">Project 2</a></li>
+        </ul>
+    </li>
     </ul>
-    <ul><li>Latest</li></ul>
-        <ul style="list-style-type:circle">
+    <ul>
+        <li>Latest</li>
+        <ul>
         <li><a href="project4.html">Project 4</a></li>
-    <li><a href="project5.html">Project 5</a></li></ul>
-    <!--kažkodel ne taip lygiuoja kaip pavyzdyje, kažkas ne taip-->
+        <li><a href="project5.html">Project 5</a></li>
+        </ul>
+    </li>
+    </ul>
     <h1>Festival Schedule</h1>
     <table width="180px" border="1px">
         <tr>  
@@ -45,8 +51,9 @@
     <div><label for="email">Email:</laber>
     <input type="text" id="email" name="email" placeholder="Enter your Email" required></div>
     <div><label for="location" placeholder="Your City">Location:</label>
-        <!--kaip padaryti, kad nesiūlytų pirmo pasirinkimo iškart, o būtų placeholderis?-->
     <select id="location" name="location">
+    <option value="default">Choose city</option>
+    <!-- cia taip darosi? ar gali buti kazkoks placeholderis? -->
     <option value="Vilnius">Vilnius</option>
     <option value="Kaunas">Kaunas</option>
     <option value="Klaipeda">Klaipėda</option>
