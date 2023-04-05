@@ -1,83 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <title>Uzduotis 02</title>
 </head>
+
 <body>
-    <img src="img/logo-01.svg" alt="VCS logo"
-    width="400">
-        <h1>About</h1>
-    <p><b>Lorem Ipsum</b> is simply dummy text of the <em>printing and typesetting industry</em>. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type speciment book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+    <img src="img/logo-01.svg" alt="VCS logo" width="400">
+    <h1>About</h1>
+    <p><b>Lorem Ipsum</b> is simply dummy text of the <em>printing and typesetting industry</em>. Lorem Ipsum has been
+        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type speciment book. It has survived not only five centuries, but also the leap into
+        electronic typesetting, remaining essentially unchanged.</p>
     <h1>Projects</h1>
     <ul>
         <li>Featured</li>
         <ul>
-        <li><a href="project1.html">Project 1</a></li>
-        <li><a href="project2.html">Project 2</a></li>
+            <li><a href="project1.html">Project 1</a></li>
+            <li><a href="project2.html">Project 2</a></li>
         </ul>
-    </li>
     </ul>
     <ul>
         <li>Latest</li>
         <ul>
-        <li><a href="project4.html">Project 4</a></li>
-        <li><a href="project5.html">Project 5</a></li>
+            <li><a href="project4.html">Project 4</a></li>
+            <li><a href="project5.html">Project 5</a></li>
         </ul>
-    </li>
     </ul>
     <h1>Festival Schedule</h1>
     <table width="180px" border="1px">
-        <tr>  
-        <td style="text-align: center"><b>Time</b></td>  
-        <td style="text-align: center"><b>Topic</b></td>
+        <tr>
+            <td style="text-align: center"><b>Time</b></td>
+            <td style="text-align: center"><b>Topic</b></td>
         </tr>
         <tr>
-        <td>9:00-12:00</td>
-        <td>Registration</td>
+            <td>9:00-12:00</td>
+            <td>Registration</td>
         </tr>
         <tr>
             <td>12:00-14:00</td>
             <td>Keynote</td>
         </tr>
-</table>
-<h1>Sign Up!</h1>
-<form action="action_page.php" method="POST">
-    <!--koks skirtumas tarp <p> ir <div>?-->
-    <div><label for="name">Name:</label>
-    <input type="text" id="name" name="name" placeholder="Enter your Name" required></div>
-    <div><label for="email">Email:</laber>
-    <input type="text" id="email" name="email" placeholder="Enter your Email" required></div>
-    <div><label for="location" placeholder="Your City">Location:</label>
-    <select id="location" name="location">
-    <option value="default">Choose city</option>
-    <!-- cia taip darosi? ar gali buti kazkoks placeholderis? -->
-    <option value="Vilnius">Vilnius</option>
-    <option value="Kaunas">Kaunas</option>
-    <option value="Klaipeda">Klaipėda</option>
-    <option value="Panevezys">Panevėžys</option>
-    <option value="Siauliai">Šiauliai</option>
-    </select>
-</div>
-<div><label for="gender">Gender:</label>
-    <input type="radio" name="gender" value="female"
-    <label>Female</label>
-    <input type="radio" name="gender" value="male"
-    <label>Male</label>
-    <!--kodėl raudonuoja paskutiniai du label, kažkas ne taip?-->
-    </div>
-    <div>
-    <label for="freeform">Message:</label>
-    </div>
-    <!--<br> ar <div>?-->
-    <div>
-    <textarea id="freeform" name="freeform" placeholder="Your message"></textarea>
-    </div>
-    <div>
-        <input type="submit" value="Sign Up">
-    </div>
+    </table>
+    <h1>Sign Up!</h1>
+    <form action="action_page.php" method="POST">
+        <!--koks skirtumas tarp <p> ir <div>?-->
+        <div><label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your Name" required></div>
+        <div><label for="email">Email:</label>
+            <input type="text" id="email" name="email" placeholder="Enter your Email" required></div>
+        <div><label for="location">Location:</label>
+            <select id="location" name="location">
+                <option value="default">Choose city</option>
+                <!-- cia taip darosi? ar galima padaryti placeholderį? -->
+                <option value="Vilnius">Vilnius</option>
+                <option value="Kaunas">Kaunas</option>
+                <option value="Klaipeda">Klaipėda</option>
+                <option value="Panevezys">Panevėžys</option>
+                <option value="Siauliai">Šiauliai</option>
+            </select>
+        </div>
+        <div><label for="gender">Gender:</label>
+            <input type="radio" name="gender" value="female">Female
+            <input type="radio" name="gender" value="male">Male
+        </div>
+        <div>
+            <label for="freeform">Message:</label>
+        </div>
+        <!--<br> ar <div>?-->
+        <div>
+            <textarea id="freeform" name="freeform" placeholder="Your message"></textarea>
+        </div>
+        <div>
+            <input type="submit" value="Sign Up">
+        </div>
     </form>
 </body>
+
 </html>
