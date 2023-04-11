@@ -1,0 +1,96 @@
+body {
+    background-color:khaki;
+}
+/* kreivas lygiavimas desineje
+.container > div {
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    font-size: 2em;
+    color:black;
+}
+
+.container {
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap:3px;
+}
+
+.container > div:nth-child(1) {
+    color:red;
+    background-color:red;
+    grid-column:1/span 2;
+    border-radius:5px;
+}
+.container > div:nth-child(2) {
+    color:blue;
+    background-color:blue;
+    grid-column:3/span 4;
+    border-radius:5px;
+}
+.container > div:nth-child(3) {
+    color:green;
+    background-color:green;
+    grid-column:1/span 1;
+    border-radius:5px;
+}
+.container > div:nth-child(4) {
+    color:purple;
+    background-color:purple;
+    grid-column:2/span 4;
+    border-radius:5px;
+}
+.container > div:nth-child(5) {
+    color:yellow;
+    background-color:yellow;
+    grid-column:1/span 4;
+    border-radius:5px;
+}
+  */
+.container {
+    height: 20%;
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+    "r r b b"
+    "g p p p"
+    "y y y y";
+}
+
+.container > div:nth-child(1n) {
+    grid-area: r;
+    color:red;
+    background-color:red;
+    border-radius:5px;
+}
+
+.container > div:nth-child(2n) {
+    grid-area: b;
+    color:blue;
+    background-color:blue;
+    border-radius:5px;
+}
+
+.container > div:nth-child(3n) {
+    grid-area: g;
+    color:green;
+    background-color:green;
+    border-radius:5px;
+}
+
+.container > div:nth-child(4n) {
+    grid-area: p;
+    color:purple;
+    background-color:purple;
+    border-radius:5px;
+}
+
+.container > div:nth-child(5n) {
+    grid-area: y;
+    color:yellow;
+    background-color:yellow;
+    border-radius:5px;
+}
