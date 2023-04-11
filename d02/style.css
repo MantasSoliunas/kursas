@@ -1,0 +1,19 @@
+button {
+    background-color:blue;
+    color:#fff;
+    width:200px;
+    height:200px;
+    font-size:24px;
+    border-radius:50%;
+    border:none;
+
+}
+
+button:hover {
+    background-color:blueviolet;
+}
+
+ul li:nth-child(1) {
+    color:green;
+}
+
