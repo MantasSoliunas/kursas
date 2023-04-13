@@ -1,0 +1,49 @@
+header, footer {
+    background-color:gray;
+    height:50px;
+    border-radius:5px;
+    color:white;
+    padding:5px;
+    margin-top:5px;
+    margin-bottom:5px;
+}
+/* chatgpt padejo, bet nelabai supratau paaiskinimo :( */
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-gap: 10px;
+    grid-template-areas:
+    "sidebar"
+    "content"
+    "sidebar2";
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color:#4a4844;
+    color:#fff;
+    padding:5px;
+    border-radius:5px;
+    align-items:flex-start;
+    height:100px
+}
+
+.content {
+    grid-area: content;
+    background-color:#4a4844;
+    color:#fff;
+    border-radius:5px;
+}
+
+p {
+    margin:0;
+    padding:5px;
+}
+
+.sidebar2 {
+    grid-area: sidebar2;
+    background-color:lightgray;
+    border-radius:5px;
+    padding:5px;
+    height:100px;
+}

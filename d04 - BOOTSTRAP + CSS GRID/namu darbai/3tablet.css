@@ -10,14 +10,16 @@ header, footer {
 
 main {
     display:grid;
-    grid-gap:10px;
-    grid-template-columns: 1fr 1100px 1fr;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 2fr 1fr;
     grid-template-areas:
-    "sidebar content sidebar2";
+    "sidebar content"
+    "sidebar2";
+    grid-gap:10px;
 }
 
 .sidebar {
-    grid-area: sidebar;
+    grid-area:sidebar;
     background-color:#4a4844;
     color:#fff;
     padding:5px;
@@ -26,16 +28,20 @@ main {
 }
 
 .content {
-    grid-area: content;
+    grid-area:content;
     background-color:#4a4844;
     color:#fff;
     border-radius:5px;
 }
 
+p {
+    margin:0;
+    padding:5px;
+}
+
 .sidebar2 {
-    grid-area: sidebar2;
+    grid-area:sidebar2;
     background-color:lightgray;
     border-radius:5px;
     padding:5px;
-    
 }
