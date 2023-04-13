@@ -10,7 +10,7 @@ header, footer {
 
 main {
     display:grid;
-    grid-gap:5px;
+    grid-gap:10px;
     grid-template-columns: 1fr 1100px 1fr;
     grid-template-areas:
     "sidebar content sidebar2";
@@ -22,6 +22,7 @@ main {
     color:#fff;
     padding:5px;
     border-radius:5px;
+    align-items:flex-start;
 }
 
 .content {
