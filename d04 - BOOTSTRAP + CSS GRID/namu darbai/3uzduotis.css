@@ -1,0 +1,40 @@
+header, footer {
+    background-color:gray;
+    height:50px;
+    border-radius:5px;
+    color:white;
+    padding:5px;
+    margin-top:5px;
+    margin-bottom:5px;
+}
+
+main {
+    display:grid;
+    grid-gap:5px;
+    grid-template-columns: 1fr 1100px 1fr;
+    grid-template-areas:
+    "sidebar content sidebar2";
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color:#4a4844;
+    color:#fff;
+    padding:5px;
+    border-radius:5px;
+}
+
+.content {
+    grid-area: content;
+    background-color:#4a4844;
+    color:#fff;
+    border-radius:5px;
+}
+
+.sidebar2 {
+    grid-area: sidebar2;
+    background-color:lightgray;
+    border-radius:5px;
+    padding:5px;
+    
+}
