@@ -8,25 +8,23 @@ header, footer {
     margin-bottom:5px;
 }
 
-main {
+.container {
     display:grid;
-    grid-gap:10px;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-areas:
-    "sidebar content sidebar2";
+    grid-gap:5px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
 }
 
 .sidebar {
-    grid-area: sidebar;
+    grid-area: 1 / 1 / 2 / 2;
     background-color:#4a4844;
     color:#fff;
     padding:5px;
     border-radius:5px;
-    align-items:flex-start;
 }
 
 .content {
-    grid-area: content;
+    grid-area: 1 / 2 / 2 / 4;
     background-color:#4a4844;
     color:#fff;
     border-radius:5px;
@@ -38,9 +36,8 @@ p {
 }
 
 .sidebar2 {
-    grid-area: sidebar2;
+    grid-area: 1 / 4 / 2 / 5;
     background-color:lightgray;
     border-radius:5px;
     padding:5px;
-    
 }
