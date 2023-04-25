@@ -28,6 +28,7 @@ body {
 img {
     width:366px;
     height:206px;
+    display:block;
 }
 
 section {
