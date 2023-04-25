@@ -19,7 +19,7 @@ body {
     display:block;
     position:fixed;
     width:100%;
-    background-color:#f2f2f2;
+    background-color:#d3e2f2;
 }
 
 .container {
@@ -60,3 +60,102 @@ body {
     padding:20px 0;
 }
 
+/* HERO */
+
+.hero {
+    text-align:center;
+    padding:100px;
+}
+
+section > .container {
+    padding:120px 0;
+}
+
+.hero h1 {
+    color:#fff;
+    font-size:2rem;
+    display:block;
+    margin-top:0;   
+}
+
+.hero a {
+    font-size:1.125rem;
+    letter-spacing:0.02em;
+    text-decoration:none;
+    color:#fff;
+    background-color:#084fa2;
+    padding: 25px 65px 22px;
+    border-radius:5px;
+    display:inline-block;
+    margin-top:50px;
+    cursor:pointer;
+}
+
+/* FLEET */
+
+.fleet {
+    background-color:#d3e2f2;
+    font-size:1rem;
+}
+
+.fleet .container {
+    display:flex;
+}
+
+/* SERVICES */
+
+.services {
+    color:#fff;
+    font-size:2rem;
+}
+
+.services h2 {
+    text-align:center;
+}
+
+.services li {
+    list-style:none;
+    padding:10px;
+}
+
+.services li:hover {
+    display:inline-block;
+    padding: 5px;
+    background-color:#084fa2;
+
+}
+
+/* LOCATION */
+.location {
+    background-color:#084fa2;
+    color:#fff;
+}
+
+.section-heading {
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-content {
+    justify-content:center;
+}
+
+/* FOOTER */
+
+.main-footer {
+    background-color:#d3e2f2;
+    font-size:0.9rem;
+    padding:15px
+}
+
+.main-footer p {
+    text-align:center;
+    margin:0;
+}
+
+.main-footer .socials {
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    margin-top:10px;
+}
