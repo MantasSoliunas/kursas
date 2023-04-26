@@ -7,56 +7,64 @@ body {
     font-size:16px;
     margin:0;
 }
+
 /* header */
 
-.container {
-    width:100%;
-    margin:30px 25px;
-}
-
-.top {
+header {
     background-color:#177cc2;
-    color:#fff;
     width:100%;
     padding:30px 25px;
     margin:0;
 }
 
-.top h1 {
+header h1 {
     font-size:2.5rem;
-    /* pagal psd faila 40px dydis */
+    /* pagal psd failą 40px dydis = 40/16=2.5rem */
     font-weight:normal;
+    color:#fff;
+    margin:0;
 }
 
 /* gallery */
+
+section {
+    background-color:#d4d4d4;
+}
 
 img {
     width:365px;
     height:206px;
     display:block;
-}
-
-section {
-    background-color:#d4d4d4;
-    padding:30px 25px;
-    margin:0; 
+    /* pagal psd failą nuotraukų dydis */
 }
 
 .flex-container {
     display:flex;
-    flex-wrap: wrap;
+    flex-wrap:wrap;
 }
 
 figure {
     margin:25px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.495);
+    /* šiek tiek neaišku */
 }
 
 figcaption {
     font-size: 1.875rem;
-    /* pagal psd faila 30px dydis */
+    /* pagal psd failą 30px dydis = 30/16=1.875rem */
     font-weight:normal;
     background-color:#fff;
     padding:12px 30px;
 }
 
+@media screen and (max-width:640px) {
+    .flex-container {
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+
+    header h1 {
+        text-align:center;
+    }
+}
