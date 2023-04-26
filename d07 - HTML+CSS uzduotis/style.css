@@ -12,7 +12,6 @@ body {
 .container {
     width:100%;
     margin:30px 25px;
-    font-size:2.5rem;
 }
 
 .top {
@@ -23,10 +22,16 @@ body {
     margin:0;
 }
 
+.top h1 {
+    font-size:2.5rem;
+    /* pagal psd faila 40px dydis */
+    font-weight:normal;
+}
+
 /* gallery */
 
 img {
-    width:366px;
+    width:365px;
     height:206px;
     display:block;
 }
@@ -49,6 +54,9 @@ figure {
 
 figcaption {
     font-size: 1.875rem;
+    /* pagal psd faila 30px dydis */
+    font-weight:normal;
     background-color:#fff;
     padding:12px 30px;
 }
+
