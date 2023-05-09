@@ -111,12 +111,39 @@ Sukurkite keturis kintamuosius ir ​Math.random()​ funkcija sugeneruokite jie
 Naudokite funkcija Math.random(). Atspausdinkite 3 skaičius nuo -10 iki 10. Skaičiai mažesni už 0 turi būti  laužtiniuose skliaustuose [], 0 -  (), didesni už 0 {}.
 */
 
+// let x = Math.round(Math.random() * (10 - -10 + 1) + -10);
+// let y = Math.round(Math.random() * (10 - -10 + 1) + -10);
+// let z = Math.round(Math.random() * (10 - -10 + 1) + -10);
 
+// if (x < 0) {
+//     console.log(`[${x}]`);
+// } else if (x === 0) {
+//     console.log(`(${x})`);
+// } else {
+//     console.log(`{${x}}`);
+// }
+
+// if (y < 0) {
+//     console.log(`[${y}]`);
+// } else if (y == 0) {
+//     console.log(`(${y})`);
+// } else {
+//     console.log(`{${y}}`);
+// }
+
+// if (z < 0) {
+//     console.log(`[${z}]`);
+// } else if (z == 0) {
+//     console.log(`(${z})`);
+// } else {
+//     console.log(`{${z}}`);
+// }
 
 /* 07.
 Įmonė parduoda žvakes po 1 EUR. Perkant daugiau kaip už 1000 EUR taikoma 3 % nuolaida, daugiau kaip už 2000 EUR - 4 % nuolaida. Parašykite programą, kuri skaičiuos žvakių kainą ir atspausdintų atsakymą kiek žvakių ir kokia kaina perkama. Žvakių kiekį generuokite ​Math.random()​ funkcija nuo 5 iki 3000.
 */
 
+let zvakesKaina = 1
 
 
 /* 08.
