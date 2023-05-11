@@ -3,14 +3,20 @@ Užduotis 1
 Naudodami while loop, konsolėje parašykite nuo 10 iki 1. 
 */
 
-
+// let num = 1;
+// while (num <= 10) {
+//     console.log(num);
+//     num++;
+// }
 
 /* 
 Užduotis 2
 Naudodami for loop, konsolėje parašykite nuo 10 iki 1.
 */
 
-
+// for (let num = 10; num >= 1; num--) {
+//     console.log(num);
+// }
 
 /*
 Užduotis 3
@@ -26,14 +32,26 @@ Po 1 mėnesio(-ių) bus 16 avių!
 Po 2 mėnesio(-ių) bus 64 avių!
 */
 
-
+// let numAvys = 4;
+// let numMenuo = 1;
+// let kiekMenSpausdinti = 12;
+// while (numMenuo <= kiekMenSpausdinti) {
+//     console.log(`Po ${numMenuo} mėnesio(-ių) bus ${numAvys * numMenuo} avių!`);
+//     numMenuo++;
+// }
 
 /*
 Užduotis 4
 Atlikite užduotį JS 03 su for loop
 */
 
+// let numAvys = 4;
+// let numMenuo = 1;
+// let kiekMenSpausdinti = 12;
 
+// for (let numMenuo = 1; numMenuo <= kiekMenSpausdinti; numMenuo++) {
+//     console.log(`Po ${numMenuo} mėnesio(-ių) bus ${numAvys * numMenuo} avių!`)
+// }
 
 /*
 Užduotis 5
@@ -48,7 +66,19 @@ let totalGen = 19;
 let totalMW = 0;
 */
 
+// let currentGen = 1;
+// let totalGen = 19;
+// let totalMW = 0;
 
+// while (currentGen <= 4) {
+//     totalMW += 62;
+//     console.log(`Generatorius #${currentGen} įjungtas, pridėjo 62 MW, viso generuojama ${totalMW} MW!`)
+//     currentGen++
+// } 
+// for (currentGen >= 5; currentGen <= totalGen; currentGen++) {
+//     totalMW += 124;
+//     console.log((`Generatorius #${currentGen} įjungtas, pridėjo 124 MW, viso generuojama ${totalMW} MW!`))
+// }
 
 /*
 Užduotis 6
@@ -64,8 +94,20 @@ let totalGen = 19;
 let totalMW = 0;
 */
 
+// let totalGen = 19;
+// let totalMW = 0;
 
-
+// for (let currentGen = 1; currentGen <= totalGen; currentGen++) {
+//     if (currentGen <= 4 && currentGen % 2 === 0) {
+//         totalMW +=62;
+//         console.log(`Generatorius #${currentGen} įjungtas, pridėjo 62 MW, viso generuojama ${totalMW} MW!`);
+//     } else if (currentGen % 2 === 0) {
+//         totalMW += 124;
+//         console.log(`Generatorius #${currentGen} įjungtas, pridėjo 124 MW, viso generuojama ${totalMW} MW!`)
+//     } else {
+//         console.log(`Generatorius #${currentGen} išjungtas.`)
+//     }
+// }
 /*
 Užduotis 7
 Papildyk while loop taip, kad tik lyginiai skaičiai būtų spausdinami. Tavo rezultatas turėtų būti lyginiai skaičiai nuo 10 iki 2 žemėjančia tvarka.
@@ -79,14 +121,29 @@ num--;
 }
 */
 
-
+// let num = 10;
+// while (num >= 2) {
+//     if (num % 2 === 0) {
+//         console.log(num);
+//     }
+//     num--;
+// }
 
 /*
 Užduotis 8
 Sukurk funkciją maxOf2, kuri priima du skaičius ir gražina didesnį skaičių. Nepamiršk galimybės, kad skaičiai bus lygūs. Tuo atveju gražink vieną iš skaičių.
 */
 
-
+// function maxOf2 (num1, num2) {
+//     if (num1>num2) {
+//         return num1
+//     } else if (num1<num2) {
+//         return num2
+//     } else if (num1=num2) {
+//         return num1
+//     }
+// }
+// console.log(maxOf2(10,5))
 
 /*
 Užduotis 9
@@ -104,6 +161,13 @@ Rezultatas:
 Lietuvoje šiuo metu -3.3 laipsnių pagal Celsijų
 */
 
+// function ftoC(num1) {
+//     let celsius = (num1 - 32) * 5 / 9;
+//     return celsius.toFixed(1);
+// }
+
+// let temp = ftoC(26);
+// console.log(`Lietuvoje šiuo metu ${temp} laipsnių pagal Celsijų`);
 
 
 /*
@@ -118,7 +182,11 @@ Turime masyvą, kuriame yra trumpos tekstinės eilutės (pateikta apačioje). M�
 // Masyvas
 let posts = ["Sveikinu radus darbą", "Ar tikrai pabaigus kursą viskas bus gerai", "Javascript nėra Java", "Rasti video medžiagą visada šaunu"];
 */
+let posts = ["Sveikinu radus darbą", "Ar tikrai pabaigus kursą viskas bus gerai", "Javascript nėra Java", "Rasti video medžiagą visada šaunu"];
 
+function longestWord(str) {
+    string.split(" ")
+}
 
 
 /*

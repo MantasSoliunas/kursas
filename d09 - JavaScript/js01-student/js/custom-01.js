@@ -11,7 +11,7 @@ Sukurkite 4 kintamuosius, kurie saugotų jūsų vardą, pavardę, gimimo metus i
 // let vardas = "Vardas";
 // let pavarde = "Pavarde";
 // let amzius = 1993
-// let metaiDabar = 2023;
+// let metaiDabar = new Date().getFullYear();
 // console.log(`Aš esu ${vardas} ${pavarde}. Man yra ${metaiDabar - amzius} metai(-ų)`);
 
 /* 02.
@@ -117,7 +117,7 @@ Naudokite funkcija Math.random(). Atspausdinkite 3 skaičius nuo -10 iki 10. Ska
 
 // if (x < 0) {
 //     console.log(`[${x}]`);
-// } else if (x === 0) {
+// } else if (x == 0) {
 //     console.log(`(${x})`);
 // } else {
 //     console.log(`{${x}}`);
@@ -143,22 +143,68 @@ Naudokite funkcija Math.random(). Atspausdinkite 3 skaičius nuo -10 iki 10. Ska
 Įmonė parduoda žvakes po 1 EUR. Perkant daugiau kaip už 1000 EUR taikoma 3 % nuolaida, daugiau kaip už 2000 EUR - 4 % nuolaida. Parašykite programą, kuri skaičiuos žvakių kainą ir atspausdintų atsakymą kiek žvakių ir kokia kaina perkama. Žvakių kiekį generuokite ​Math.random()​ funkcija nuo 5 iki 3000.
 */
 
-let zvakesKaina = 1
+// let x = Math.round(Math.random() * (3000 - 5 + 1) + 5);
+// let akcija3 = 0.03;
+// let akcija4 = 0.04;
 
+// if (x < 1000) {
+//     console.log(x);
+// } else if (x => 1000 && x < 2000) {
+//     console.log(x - (x * akcija3));    
+// } else if (x => 2000) {
+//     console.log(x - (x * akcija4));
+// }
 
 /* 08.
 Naudokite funkciją Math.random(). Sukurkite tris kintamuosius su atsitiktinėm reikšmėm nuo 0 iki 100. Paskaičiuokite jų aritmetinį vidurkį. Tada aritmetinį vidurkį atmetus tas reikšmes, kurios yra mažesnės nei 10 arba didesnės nei 90. Abu vidurkius atspausdinkite. Rezultatus apvalinkite iki sveiko skaičiaus.
 */
 
+// let x = Math.round(Math.random() * 100);
+// let y = Math.round(Math.random() * 100);
+// let z = Math.round(Math.random() * 100);
+// let mid = Math.round(x + y + z / 3);
+
+// console.log(x,y,z)
+// console.log(mid);
+
+// NESAMONE NESAMONE NESAMONE NESAMONE NESAMONE NESAMONE NESAMONE NESAMONE NESAMONE NESAMONE NESAMONE NESAMONE NESAMONE NESAMONE NESAMONE NESAMONE NESAMONE NESAMONE NESAMONE NESAMONE
+// console.log(Math.round(((x + y + z) / mid )));
+// if (x < 10 || x > 90) {
+//     x = 0;
+//     console.log(Math.round((y + z) / mid--));
+// } else if (y < 10 || y > 90) {
+//     y = 0;
+//     console.log(Math.round((x + z) / mid--));
+// } else if (z < 10 || z > 90) {
+//     z = 0;
+//     console.log(Math.round((x + y) / mid--));
+// } else {
+//     console.log("Klaida");
+// }
 
 
 /* 09.
 Padarykite skaitmeninį laikrodį, rodantį valandas, minutes ir sekundes. Valandom, minutėm ir sekundėm sugeneruoti panaudokite funkciją Math.random(). Sugeneruokite skaičių nuo 0 iki 300. Tai papildomos sekundės. Skaičių pridėkite prie jau sugeneruoto laiko. Atspausdinkite laikrodį prieš ir po sekundžių pridėjimo ir pridedamų sekundžių skaičių.
 */
 
+// let hr = Math.round(Math.random() * 23);
+// let min = Math.round(Math.random() * 60);
+// let sec = Math.round(Math.random() * 60);
+// let time = hr + ':' + min + ':' + sec;
+// let msec = Math.round(Math.random() * 300);
+// console.log(time);
+// console.log(time + ':' + msec);
 
 
 /* 10.
 Naudokite funkciją Math.random(). Sugeneruokite 6 kintamuosius su atsitiktinėm reikšmėm nuo 1000 iki 9999. Atspausdinkite reikšmes viename string'e, išrūšiuotas nuo didžiausios iki mažiausios, atskirtas tarpais. Naudoti ciklų ir masyvų NEGALIMA.
 */
 
+// let a = Math.round(Math.random() * (9999 - 1000 + 1) + 1000);
+// let b = Math.round(Math.random() * (9999 - 1000 + 1) + 1000);
+// let c = Math.round(Math.random() * (9999 - 1000 + 1) + 1000);
+// let d = Math.round(Math.random() * (9999 - 1000 + 1) + 1000);
+// let e = Math.round(Math.random() * (9999 - 1000 + 1) + 1000);
+// let f = Math.round(Math.random() * (9999 - 1000 + 1) + 1000);
+
+// console.log(a,b,c,d,e,f);
