@@ -159,30 +159,6 @@ Naudokite funkcija Math.random(). Atspausdinkite 3 skaičius nuo -10 iki 10. Ska
 Naudokite funkciją Math.random(). Sukurkite tris kintamuosius su atsitiktinėm reikšmėm nuo 0 iki 100. Paskaičiuokite jų aritmetinį vidurkį. Tada aritmetinį vidurkį atmetus tas reikšmes, kurios yra mažesnės nei 10 arba didesnės nei 90. Abu vidurkius atspausdinkite. Rezultatus apvalinkite iki sveiko skaičiaus.
 */
 
-// let x = Math.round(Math.random() * 100);
-// let y = Math.round(Math.random() * 100);
-// let z = Math.round(Math.random() * 100);
-// let mid = Math.round(x + y + z / 3);
-
-// console.log(x,y,z)
-// console.log(mid);
-
-// NESAMONE NESAMONE NESAMONE NESAMONE NESAMONE NESAMONE NESAMONE NESAMONE NESAMONE NESAMONE NESAMONE NESAMONE NESAMONE NESAMONE NESAMONE NESAMONE NESAMONE NESAMONE NESAMONE NESAMONE
-// console.log(Math.round(((x + y + z) / mid )));
-// if (x < 10 || x > 90) {
-//     x = 0;
-//     console.log(Math.round((y + z) / mid--));
-// } else if (y < 10 || y > 90) {
-//     y = 0;
-//     console.log(Math.round((x + z) / mid--));
-// } else if (z < 10 || z > 90) {
-//     z = 0;
-//     console.log(Math.round((x + y) / mid--));
-// } else {
-//     console.log("Klaida");
-// }
-
-
 /* 09.
 Padarykite skaitmeninį laikrodį, rodantį valandas, minutes ir sekundes. Valandom, minutėm ir sekundėm sugeneruoti panaudokite funkciją Math.random(). Sugeneruokite skaičių nuo 0 iki 300. Tai papildomos sekundės. Skaičių pridėkite prie jau sugeneruoto laiko. Atspausdinkite laikrodį prieš ir po sekundžių pridėjimo ir pridedamų sekundžių skaičių.
 */
