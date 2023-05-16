@@ -3,10 +3,10 @@ Užduotis 1
 Naudodami while loop, konsolėje parašykite nuo 10 iki 1. 
 */
 
-// let num = 1;
-// while (num <= 10) {
+// let num = 10;
+// while (num >= 1) {
 //     console.log(num);
-//     num++;
+//     num--;
 // }
 
 /* 
@@ -182,12 +182,8 @@ Turime masyvą, kuriame yra trumpos tekstinės eilutės (pateikta apačioje). M�
 // Masyvas
 let posts = ["Sveikinu radus darbą", "Ar tikrai pabaigus kursą viskas bus gerai", "Javascript nėra Java", "Rasti video medžiagą visada šaunu"];
 */
+
 let posts = ["Sveikinu radus darbą", "Ar tikrai pabaigus kursą viskas bus gerai", "Javascript nėra Java", "Rasti video medžiagą visada šaunu"];
-
-function longestWord(str) {
-    string.split(" ")
-}
-
 
 /*
 Užduotis 11
