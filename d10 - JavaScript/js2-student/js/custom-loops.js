@@ -97,9 +97,31 @@ Suskaičiuokite kiek 3-čio uždavinio masyve yra žodžių trumpesnių nei 5 si
 Sugeneruokite 300 atsitiktinių skaičių nuo 0 iki 300, atspausdinkite juos atskirtus tarpais ir suskaičiuokite kiek tarp jų yra didesnių už 150.  Skaičiai didesni nei 275 turi būti atspausdinti skliausteliuose” [ ] “.
 */
 
+// let biggerCount = 0
+// let randomNumber = ''
+
+// for (let i = 0; i <= 300; i++) {
+//   let randomNumber = Math.round(Math.random() * 300);
+//     if (randomNumber >= 150) {
+//         biggerCount++
+// }
+// }
+
+// console.log(`Skaičių didesnių nei 150: ${biggerCount}`)
+
 /* 02.
 Vienoje eilutėje atspausdinkite visus skaičius nuo 1 iki 3000, kurie dalijasi iš 77 be liekanos. Skaičius atskirkite kableliais. Po paskutinio skaičiaus kablelio neturi būti.
 */
+let numbers = []
+
+for (i = 1; i <= 3000; i++) {
+    if (i % 77 === 0) {
+        numbers.push(i)
+    }
+}
+
+let result = numbers.join(', ')
+console.log(result)
 
 /* 03.
 Nupieškite kvadratą iš “*”, kurio kraštines sudaro 10 “*”.
@@ -111,3 +133,50 @@ Nupieškite kvadratą iš “*”, kurio kraštines sudaro 10 “*”.
 * * * * * * * * * * *
 * * * * * * * * * * *
 */
+
+let eilute = 10
+let kvadratas = ''
+
+for (i = 0; i < eilute; i++) {
+    for (j = 0; j < eilute; j++) {
+    kvadratas += '* '
+    }
+    kvadratas += '\n'
+}
+
+console.log(kvadratas)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// var size = 10;
+// var square = '';
+
+// for (var i = 0; i < size; i++) {
+//   for (var j = 0; j < size; j++) {
+//     square += '* ';
+//   }
+//   square += '\n';
+// }
+
+// console.log(square);
